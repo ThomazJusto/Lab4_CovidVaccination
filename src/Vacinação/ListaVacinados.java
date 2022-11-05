@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaVacinados {
-	protected List<Paciente> lista = new ArrayList<>();
+	private ArrayList<Paciente> lista;
 	
+	public ListaVacinados() {
+		this.lista = new ArrayList<>();
+	}
+
 	public void adicionaLista(Paciente paciente) {
 		lista.add(paciente);
 	}

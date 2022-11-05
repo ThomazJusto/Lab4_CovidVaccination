@@ -26,7 +26,7 @@ public class FilaDeVacinação {
 	
 	public void vacinar(int quantidade) {
 		for(int i=0; i < quantidade; i++) {
-			Paciente temp = Fila.poll();
+			Paciente temp = Fila.remove();
 			lista.adicionaLista(temp);
 		}
 	}

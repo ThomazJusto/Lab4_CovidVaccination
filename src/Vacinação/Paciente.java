@@ -10,6 +10,11 @@ public class Paciente {
 		this.nome = nome;
 		this.idade = idade;
 	}
+	
+	public Paciente(Paciente paciente) {
+		this.nome = paciente.nome;
+		this.idade = paciente.idade;
+	}
 
 	public String getNome() {
 		return nome;
